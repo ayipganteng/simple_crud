@@ -1,0 +1,9 @@
+This Application using
+Laravel v9.46.0 (PHP v8.1.12)
+
+1. make sure you are using php version > 8
+2. create a new database with the name laravel_crud
+3. you can type php artisan migrate or import laravel_crud.sql which I put in the database folder
+4. type php artisan optimize
+5. type php artisan serve
+6. go to browser and run http://127.0.0.1:8000
