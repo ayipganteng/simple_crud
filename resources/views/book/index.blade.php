@@ -100,11 +100,8 @@
 						<div class="row mb-3{{$errors->has('quantity') ? ' has-error' : ''}}">
 							<label for="inputNumber" class="col-sm-2 col-form-label">quantity</label>
 							<div class="col-sm-10">
-<<<<<<< HEAD
 								<input name="quantity" type="number" class="form-control" value="{{old('quantity')}}">
-=======
 								<input name="quantity" type="number" min="1" class="form-control" value="{{old('quantity')}}">
->>>>>>> cd1a43d (commit kedua)
 								@if($errors->has('quantity'))
 								<span class="help-block" style="color: red;">{{$errors->first('quantity')}}</span>
 								@endif
