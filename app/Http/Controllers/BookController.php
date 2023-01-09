@@ -13,6 +13,15 @@ class BookController extends Controller
     }
 
     public function create(Request $request){
+<<<<<<< HEAD
+=======
+        $this->validate($request,[
+            'name' => 'required|min:3',
+            'quantity' => 'required|min:1',
+            'price' => 'required',
+        ]);
+
+>>>>>>> cd1a43d (commit kedua)
     	$book = Book::create($request->all());    	
     	return redirect('/book')->with('success','Data has been saved successfully!');
     }
